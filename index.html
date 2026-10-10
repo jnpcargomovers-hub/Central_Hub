@@ -19,9 +19,10 @@
   <!-- Container -->
   <div class="max-w-xl mx-auto p-3 sm:p-5 space-y-4">
 
-    <!-- Top Header: Logo with Fallback + Status -->
+    <!-- Top Header: Logo with Safe Fallback + Live Status -->
     <header class="bg-white rounded-2xl p-3.5 sm:p-4 shadow-sm border border-slate-200/80 flex items-center justify-between">
       <div class="flex items-center gap-3">
+        <!-- Logo Image with Clean Inline Brand Fallback -->
         <div class="flex-shrink-0">
           <img 
             id="hubLogo"
@@ -41,14 +42,14 @@
         </div>
       </div>
 
-      <!-- Operational Status -->
+      <!-- Live Operations Status Badge -->
       <div class="flex items-center gap-1.5 bg-emerald-50 text-emerald-700 border border-emerald-200 text-[11px] font-bold px-2.5 py-1 rounded-full">
         <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
         <span>4 Active</span>
       </div>
     </header>
 
-    <!-- Operational Banner -->
+    <!-- Operational Notification Banner -->
     <div class="bg-gradient-to-r from-blue-900 via-blue-800 to-indigo-900 rounded-2xl p-3.5 text-white shadow-md flex items-center justify-between">
       <div>
         <p class="text-xs font-bold tracking-wide uppercase text-blue-200">Fleet Operations Desk</p>
@@ -60,7 +61,7 @@
     <!-- 7 Operational Tiles Grid -->
     <main class="grid grid-cols-1 sm:grid-cols-2 gap-3">
 
-      <!-- 1. Loader Data (Live) -->
+      <!-- 1. Loader Data (Active) -->
       <a href="https://jnpcargomovers-hub.github.io/loader-app/" 
          class="group bg-white p-4 rounded-2xl shadow-sm border border-slate-200/90 hover:border-blue-500 hover:shadow-md transition duration-150 active:scale-[0.98] flex items-center justify-between">
         <div class="flex items-center gap-3.5">
@@ -78,7 +79,7 @@
         <i class="fa-solid fa-chevron-right text-xs text-slate-400 group-hover:text-blue-600 group-hover:translate-x-0.5 transition"></i>
       </a>
 
-      <!-- 2. Material Delivery Indent (Live) -->
+      <!-- 2. Material Delivery Indent (Active) -->
       <a href="https://jnpcargomovers-hub.github.io/delivery-indent/" 
          class="group bg-white p-4 rounded-2xl shadow-sm border border-slate-200/90 hover:border-emerald-500 hover:shadow-md transition duration-150 active:scale-[0.98] flex items-center justify-between">
         <div class="flex items-center gap-3.5">
@@ -96,7 +97,7 @@
         <i class="fa-solid fa-chevron-right text-xs text-slate-400 group-hover:text-emerald-600 group-hover:translate-x-0.5 transition"></i>
       </a>
 
-      <!-- 3. Advance Payment Request (Live) -->
+      <!-- 3. Advance Payment Request (Active - Points to advance-req) -->
       <a href="https://jnpcargomovers-hub.github.io/advance-req/" 
          class="group bg-white p-4 rounded-2xl shadow-sm border border-slate-200/90 hover:border-amber-500 hover:shadow-md transition duration-150 active:scale-[0.98] flex items-center justify-between">
         <div class="flex items-center gap-3.5">
@@ -114,7 +115,7 @@
         <i class="fa-solid fa-chevron-right text-xs text-slate-400 group-hover:text-amber-600 group-hover:translate-x-0.5 transition"></i>
       </a>
 
-      <!-- 4. Expense Approval (Live) -->
+      <!-- 4. Expense Approval (Active) -->
       <a href="https://jnpcargomovers-hub.github.io/expense-app/" 
          class="group bg-white p-4 rounded-2xl shadow-sm border border-slate-200/90 hover:border-red-500 hover:shadow-md transition duration-150 active:scale-[0.98] flex items-center justify-between">
         <div class="flex items-center gap-3.5">
@@ -132,7 +133,7 @@
         <i class="fa-solid fa-chevron-right text-xs text-slate-400 group-hover:text-red-600 group-hover:translate-x-0.5 transition"></i>
       </a>
 
-      <!-- 5. Maintenance Log (Roadmap) -->
+      <!-- 5. Maintenance Log (Coming Soon) -->
       <div class="bg-white/70 p-4 rounded-2xl border border-dashed border-slate-300 opacity-80 flex items-center justify-between">
         <div class="flex items-center gap-3.5">
           <div class="w-12 h-12 rounded-xl bg-slate-100 text-slate-400 flex items-center justify-center text-xl">
@@ -149,7 +150,7 @@
         <span class="text-[10px] text-slate-400 font-semibold uppercase">Pending</span>
       </div>
 
-      <!-- 6. Material Issuance Log (Roadmap) -->
+      <!-- 6. Material Issuance Log (Coming Soon) -->
       <div class="bg-white/70 p-4 rounded-2xl border border-dashed border-slate-300 opacity-80 flex items-center justify-between">
         <div class="flex items-center gap-3.5">
           <div class="w-12 h-12 rounded-xl bg-slate-100 text-slate-400 flex items-center justify-center text-xl">
@@ -166,7 +167,7 @@
         <span class="text-[10px] text-slate-400 font-semibold uppercase">Pending</span>
       </div>
 
-      <!-- 7. Material Receipt Log (Roadmap - Span 2) -->
+      <!-- 7. Material Receipt Log (Coming Soon - Span 2) -->
       <div class="bg-white/70 p-4 rounded-2xl border border-dashed border-slate-300 opacity-80 flex items-center justify-between sm:col-span-2">
         <div class="flex items-center gap-3.5">
           <div class="w-12 h-12 rounded-xl bg-slate-100 text-slate-400 flex items-center justify-center text-xl">
